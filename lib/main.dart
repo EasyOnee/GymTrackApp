@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gymapp/login_page.dart';
+import 'package:gymapp/pages/login_page.dart';
+import 'sidebar/sidebar_layout.dart';
+import 'package:gymapp/pages/homepage.dart';
 
 void main() => runApp(MiApp());
 
@@ -11,7 +13,7 @@ class MiApp extends StatelessWidget {
     return MaterialApp(
       title: "GymTrack",
       theme: ThemeData(primaryColor: const Color(0xFF71BBD9)), // Establecer el color primario en hexadecimal #71BBD9
-      home: LoginPage(),
+      home: SideBarLayout(),
       debugShowCheckedModeBanner: false,
     );
   }
